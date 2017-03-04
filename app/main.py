@@ -29,7 +29,7 @@ def start():
         'name': 'battlesnake-python'
     }
 
-
+var = 1
 @bottle.post('/move')
 def move():
     data = bottle.request.json
