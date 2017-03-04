@@ -41,10 +41,10 @@ def move():
     return {
         if var == 1:
             'move': 'left',
-            var = 0
-        elif var == 0:
+            var = 0,
+        else:
             'move': 'up',
-            var = 1
+            var = 1,
         'taunt': 'Get on the pay load!'
     }
 
