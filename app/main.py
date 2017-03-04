@@ -37,11 +37,19 @@ def move():
     directions = ['up', 'down', 'left', 'right']
 
     # (width, height) of snake pos.
-    return {
-        'move': 'left',
-        #'move': 'right',
-        'taunt': 'Get on the pay load!'
-    }
+    if var == 1:
+        return {
+            'move': 'left',
+            #'move': 'right',
+            'taunt': 'Get on the pay load!'
+        }
+        var = 0
+    elif:
+        return{
+            'move': 'right',
+            'taunt': 'Didnt mean to'
+        }
+        var = 1
 
 
 # Expose WSGI app (so gunicorn can find it)
