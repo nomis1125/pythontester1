@@ -38,8 +38,8 @@ def move():
 
     # (width, height) of snake pos.
     return {
-        #'move': 'left',
-        'move': 'right',
+        'move': 'left',
+        #'move': 'right',
         'taunt': 'Get on the pay load!'
     }
 
