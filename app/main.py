@@ -42,7 +42,7 @@ def move():
         if var1 == 0
             'move': 'up'
             var1 = 1
-        if war1 == 1
+        if var1 == 1
             'move': 'left'
             var1 = 0
         'taunt': 'Get on the pay load!'
