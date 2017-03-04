@@ -31,14 +31,14 @@ def start():
 
 @bottle.post('/move')
 def move():
-    data = bottle.request.json
-    var = data['turn']
+    data2 = bottle.request.json
+    var = data2['turn']
 
     # TODO: Do things with data
     directions = ['up', 'down', 'left', 'right']
 
     # (width, height) of snake pos.
-    if var%2 == 1:
+    if (var%2) == 1:
         return {
             'move': 'left',
             #'move': 'right',
