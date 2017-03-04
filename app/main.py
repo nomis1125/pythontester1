@@ -29,7 +29,7 @@ def start():
         'name': 'battlesnake-python'
     }
 
-
+var1 = 0
 @bottle.post('/move')
 def move():
     data = bottle.request.json
@@ -39,8 +39,12 @@ def move():
 
     # (width, height) of snake pos.
     return {
-        #if board_width == width then see if it can move up or down
-        'move': 'up'
+        if var1 == 0
+            'move': 'up'
+            var1 = 1
+        if war1 == 1
+            'move': 'left'
+            var1 = 0
         'taunt': 'Get on the pay load!'
     }
 
