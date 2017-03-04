@@ -31,8 +31,8 @@ def start():
 
 @bottle.post('/move')
 def move():
-    var = data['turn']
     data = bottle.request.json
+    var = data['turn']
 
     # TODO: Do things with data
     directions = ['up', 'down', 'left', 'right']
