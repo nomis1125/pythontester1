@@ -37,8 +37,10 @@ def move():
     # TODO: Do things with data
     directions = ['up', 'down', 'left', 'right']
 
+    # (width, height) of snake pos.
     return {
-        'move': random.choice(directions),
+        #if board_width == 
+        'move': random.choice('up', 'down'),
         'taunt': 'battlesnake-python!'
     }
 
