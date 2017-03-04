@@ -46,7 +46,7 @@ def move():
         }
     else:
         return{
-            'move': 'right',
+            'move': 'up',
             'taunt': 'Didnt mean to'
         }
 
