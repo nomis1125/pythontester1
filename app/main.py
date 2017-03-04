@@ -31,25 +31,24 @@ def start():
 
 @bottle.post('/move')
 def move():
+    var = 'turn'
     data = bottle.request.json
 
     # TODO: Do things with data
     directions = ['up', 'down', 'left', 'right']
 
     # (width, height) of snake pos.
-    if var == 1:
+    if var%2 == 1:
         return {
             'move': 'left',
             #'move': 'right',
             'taunt': 'Get on the pay load!'
         }
-        var = 0
     elif:
         return{
             'move': 'right',
             'taunt': 'Didnt mean to'
         }
-        var = 1
 
 
 # Expose WSGI app (so gunicorn can find it)
