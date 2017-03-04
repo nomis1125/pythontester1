@@ -44,7 +44,7 @@ def move():
             #'move': 'right',
             'taunt': 'Get on the pay load!'
         }
-    elif:
+    else:
         return{
             'move': 'right',
             'taunt': 'Didnt mean to'
